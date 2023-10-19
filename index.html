@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href=""
-			rel="stylesheet"
-		/>
-		<title></title>
-	</head>
-	<body>
-		<h1></h1>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link href="styles/index.css" rel="stylesheet" />
+	<title>Lenni art</title>
+</head>
+
+<body>
+	<header class='page-header'>
+		<img src='/images/logo.svg' class='page-header__logo'></img>
+		<nav class='page-header__nav'>
+			<a href="#" class='page-header__nav-link'>Мероприятия</a>
+			<a href="#" class='page-header__nav-link'>Блог</a>
+			<a href="#" class='page-header__nav-link'>О нас</a>
+			<a href="#" class='page-header__nav-link'>Контакты</a>
+		</nav>
+
+		<button class='btn page-header__user-btn'>Войти</button>
+	</header>
+
+	<main class='main'>
+		<div class="home">
+			<header class='main-header home__main-hedaer'></header>
+			<section class='offers home_offers'></section>
+			<section class='about home_about'></section>
+			<section class='upcoming home_upcoming'></section>
+			<section class='listing home_listing'></section>
+			<section class='contacts home_contacts'></section>
+
+			<div class="doit home__doit"></div>
+		</div>
+	</main>
+</body>
+
 </html>
