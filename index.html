@@ -15,20 +15,29 @@
 
 <body>
 	<header class='page-header'>
-		<img src='images/logo.svg' class='page-header__logo'></img>
-		<nav class='page-header__nav'>
-			<a href="#" class='page-header__nav-link'>Мероприятия</a>
-			<a href="#" class='page-header__nav-link'>Блог</a>
-			<a href="#" class='page-header__nav-link'>О нас</a>
-			<a href="#" class='page-header__nav-link'>Контакты</a>
-		</nav>
+		<div class="page-header__container">
+			<img src='images/logo.svg' class='page-header__logo'></img>
 
-		<button class='btn page-header__user-btn'>Войти</button>
+			<nav class='page-header__nav'>
+				<a href="#" class='page-header__nav-link'>Мероприятия</a>
+				<a href="#" class='page-header__nav-link'>Блог</a>
+				<a href="#" class='page-header__nav-link'>О нас</a>
+				<a href="#" class='page-header__nav-link'>Контакты</a>
+			</nav>
+
+			<button class='btn page-header__user-btn'>Войти</button>
+		</div>
 	</header>
 
 	<main class='main'>
 		<div class="home">
-			<header class='main-header home__main-hedaer'></header>
+			<header class='main-header home__main-hedaer'>
+				<h1 class='main-header__title'>арт — пространство</h1>
+				<picture class='main-header__picture'>
+					<img src="images/LENNI.png" alt="">
+				</picture>
+				<p class='main-header__text'>для людей, горящих сердец и делом<br>место для настоящего</p>
+			</header>
 			<section class='offers home_offers'></section>
 			<section class='about home_about'></section>
 			<section class='upcoming home_upcoming'></section>

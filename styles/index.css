@@ -12,11 +12,15 @@
 	line-height: 1.375;
 }
 
-.page-header {
+.page-header__container {
+	max-width: 1169px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 293px;
+	margin: 0 auto;
+}
+
+.page-header {
 	background: var(--1-header, rgba(222, 222, 222, 0.5));
 }
 
@@ -43,4 +47,33 @@
 	font-size: 18px;
 	font-weight: 600;
 	border: 1px solid var(--1, #1f1e1e);
+}
+
+.main-header__title {
+	color: var(--1, #1f1e1e);
+	text-align: center;
+	font-family: Lora;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	margin: 100px 0 70px 0;
+}
+
+.main-header__picture img {
+	width: 100%;
+	object-fit: contain;
+}
+
+.main-header__text {
+	color: var(--1, #1f1e1e);
+	text-align: center;
+	font-family: Lora;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	margin: 70px 0 100px 0;
 }
