@@ -62,7 +62,7 @@ function includeHtml() {
 
 function style() {
 	return gulp
-		.src('src/styles/style.less')
+		.src('src/styles/styles.less')
 		.pipe(plumber())
 		.pipe(less())
 		.pipe(
@@ -75,7 +75,7 @@ function style() {
 		)
 		.pipe(gulp.dest('dist/styles'))
 		.pipe(minify())
-		.pipe(rename('style.min.css'))
+		.pipe(rename('styles.min.css'))
 		.pipe(gulp.dest('dist/styles'))
 }
 
