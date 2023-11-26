@@ -1,0 +1,28 @@
+.reserve {
+	display: grid;
+	gap: 65px 11%;
+	grid-template-columns: 405px calc(89% - 405px);
+	grid-template-areas: 
+		"checks scheme"
+		"order legend"; 
+	width: 100%;
+
+	&__checks {
+			grid-area: checks;
+	}
+
+	&__order {
+			grid-area: order;
+	}
+
+	&__scheme {
+			grid-area: scheme;
+	}
+
+	& > div {
+			box-sizing: border-box;
+			padding: 10px;
+			background-color: coral;
+			text-align: center;
+	}
+}

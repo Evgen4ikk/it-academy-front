@@ -1,11 +1,21 @@
 .card-event {
 	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
+
+	&event__link {
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__link:hover .card-event__title {
+		color: #a51505;
+		text-decoration-color: #a51505;
+	}
 
 	&__picture {
-		display: block;
 		position: relative;
+		display: block;
 		margin-bottom: 25px;
 	}
 
@@ -18,46 +28,41 @@
 
 	&__picture-img {
 		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 		object-fit: cover;
 	}
 
-	&_link {
-		text-decoration: none;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-	}
-
-	&__link:hover .card-event__title {
-		color: #a51505;
-		text-decoration: underline;
-	}
-
 	&__title {
-		min-height: 64px;
 		margin: 0 0 auto;
-		color: var(--1, @black);
+		min-height: 64px;
+		text-decoration: underline;
+		text-decoration-color: transparent;
 		font-family: Open Sans;
 		font-size: 24px;
 		font-style: normal;
 		font-weight: 700;
-		transition: color 0.2s, text-decoration-color 0.2s;
-		text-decoration: underline;
-		text-decoration-color: transparent;
+		line-height: normal;
+		color: #1f1e1e;
+		transition: color 0.2s;
 	}
 
 	&__text {
-		margin: 0 0 15px;
-		color: var(--1, @black);
-		font-family: Open Sans;
+		margin: 15px 0;
 		font-size: 16px;
 		font-weight: 400;
+		line-height: normal;
+		color: #1f1e1e;
 	}
 
 	&__time {
-		color: var(--1, @black);
-		font-family: Open Sans;
+		margin-top: auto;
+		display: block;
 		font-size: 14px;
+		font-style: normal;
 		font-weight: 300;
+		color: #1f1e1e;
 	}
 }
