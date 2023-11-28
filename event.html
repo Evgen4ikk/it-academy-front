@@ -5,13 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lenni Art</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link href="styles/styles.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg class="page-headerlogo-img" width="202" height="147">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+      </nav>
+
+      <a href="#" class="btn page-header__sign-in-btn">Войти</a>
+    </div>
+  </header>
+
   <main class="main">
     <!-- Здесь будут хлебные крошки -->
     <article class="event">
@@ -32,6 +50,10 @@
       </form>
     </article>
   </main>
+
+  <footer class="page-footer">
+
+  </footer>
 </body>
 
 </html>
