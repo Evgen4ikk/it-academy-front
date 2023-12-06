@@ -22,19 +22,20 @@
 
 			</header>
 
-			<sectionc class="offers home__offers">
-				</section>
-				<section class="about home__about"></section>
-				<section class="upcoming home__upcoming"></section>
-				<section class="listing home__listing"></section>
-				<section class="contacts home__contacts"></section>
+			<section class="offers home__offers">
+			</section>
+			<section class="about home__about"></section>
+			<section class="upcoming home__upcoming"></section>
+			@@include('blocks/blog-listing.html', {"class": "home__listing"})
+			<section class="contacts home__contacts"></section>
 
-				<div class="doit home__doit"></div>
+			<div class="doit home__doit"></div>
 		</div>
 	</main>
 
 	@@include('blocks/page-footer.html')
 
+	@@include('blocks/event-pp.html')
 </body>
 
 </html>

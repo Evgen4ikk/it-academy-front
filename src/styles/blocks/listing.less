@@ -1,10 +1,30 @@
 .listing {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 120px 60px;
+	padding-top: 72px;
 
-	&__card-event {
-			max-width: 405px;
-			width: calc(33.333% - 40px);
+	&__title {
+		margin: 0 auto;
+		margin-bottom: 150px;
+	}
+
+	&__container {
+		box-sizing: border-box;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: 1334px;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	&__link {
+		color: var(--1, #1f1e1e);
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		padding-top: 60px;
+		text-decoration: none;
+		text-align: end;
 	}
 }
