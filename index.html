@@ -46,14 +46,77 @@
 
       </header>
 
-      <sectionc class="offers home__offers">
-        </section>
-        <section class="about home__about"></section>
-        <section class="upcoming home__upcoming"></section>
-        <section class="listing home__listing"></section>
-        <section class="contacts home__contacts"></section>
+      <section class="offers home__offers">
+      </section>
+      <section class="about home__about"></section>
+      <section class="upcoming home__upcoming"></section>
+      <section class="blog-listing blog-listing__container home__listing">
+        <h2 class="blog-listing__title title">Блог</h2>
+        <div class="blog-listing__article-list">
+          <!-- prettier-ignore -->
+          <article class="article-card blog-listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/theatre.png" alt="Theatre Photosession" class="article-card__img" />
+              </picture>
+            </a>
+            <div class="article-card__info">
+              <time datetime="2021-11-26T00:00" class="article-card__time">26.11.2021</time>
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+            </div>
+          </article>
+          <article class="article-card blog-listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/VR.png" alt="Theatre Photosession" class="article-card__img" />
+              </picture>
+            </a>
+            <div class="article-card__info">
+              <time datetime="2022-11-05T00:00" class="article-card__time">05.11.2022</time>
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Выставка VR в Томске</h4>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+            </div>
+          </article>
+          <article class="article-card blog-listing__article-card">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="assets/images/rocking radio.png" alt="Theatre Photosession" class="article-card__img" />
+              </picture>
+            </a>
+            <div class="article-card__info">
+              <time datetime="2022-11-01T00:00" class="article-card__time">01.11.2022</time>
+              <a href="#" class="article-card__title-link">
+                <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
+                <div class="article-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="blog-listing__link link">Смотреть все</a>
+      </section>
+      <section class="contacts home__contacts"></section>
 
-        <div class="doit home__doit"></div>
+      <div class="doit home__doit"></div>
     </div>
   </main>
 
@@ -61,6 +124,55 @@
 
   </footer>
 
+  <div class="pp">
+    <div class="pp__container">
+      <div class="pp__sticky-close">
+        <button type='button' class='pp__sticky-btn'>
+          <svg class='pp__btn-icon' width='24' height='24'>
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__wrapper">
+        <h3 class='pp__title'>
+          Заполните форму
+          <br />
+          и мы подберём площадку
+        </h3>
+        <div class="pp__form form">
+          <div class="pp__list">
+            <div class="form__field field">
+              <h6 class='form__title'>Формат мероприятия</h6>
+              <div class="field__radio radio">
+                <label class='radio__label'>
+                  <input type="radio" name="format" value="seminar" class="radio__input" checked />
+                  <span class='radio__mark'></span>
+                  <span class='radio__name'>Мастер-класс/семинар</span>
+                </label>
+
+                <label class='radio__label'>
+                  <input type="radio" name="format" value="concert" class='radio__input' />
+                  <span class='radio__mark'></span>
+                  <span class='radio__name'>Концерт/выступление</span>
+                </label>
+
+                <label class='radio__label'>
+                  <input type="radio" name='format' value='show' class='radio__input' />
+                  <span class='radio__mark'></span>
+                  <span class='radio__name'>Выставка/показ</span>
+                </label>
+                <label class='radio__label'>
+                  <input type="radio" name='format' value='other' class='radio__input' />
+                  <span class='radio__mark'></span>
+                  <span class='radio__name'>Другое</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
