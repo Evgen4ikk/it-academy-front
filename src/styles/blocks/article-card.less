@@ -4,10 +4,8 @@
 	display: flex;
 	width: 100%;
 
-	&:hover {
-		.article-card__picture {
-			box-shadow: 0 0 30px fade(@black, 55%);
-		}
+	.article-card__picture:hover {
+		box-shadow: 0 0 30px fade(@black, 55%);
 	}
 
 	&__link {
@@ -18,15 +16,6 @@
 		margin-right: 60px;
 		font-size: 0;
 		text-decoration: none;
-
-		&:hover {
-			& ~ .article-card__info {
-				.article-card__title-link {
-					color: @red;
-					text-decoration-color: @red;
-				}
-			}
-		}
 	}
 
 	&__picture {
@@ -83,10 +72,6 @@
 		color: @black;
 		text-decoration-color: transparent;
 		transition: color 0.2s, text-decoration-color 0.2s;
-		&:hover {
-			color: @red;
-			text-decoration-color: @red;
-		}
 	}
 
 	&__title {
@@ -95,6 +80,12 @@
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 33px;
+
+		&:hover {
+			text-decoration: underline;
+			color: @red;
+			text-decoration-color: @red;
+		}
 	}
 
 	&__description {
@@ -109,6 +100,11 @@
 		bottom: 30px;
 		color: inherit;
 		transition: none;
+
+		&:hover {
+			color: @red;
+			text-decoration-color: @red;
+		}
 	}
 
 	& + .article-card {

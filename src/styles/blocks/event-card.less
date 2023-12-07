@@ -1,16 +1,17 @@
-.card-event {
+.event-card {
 	box-sizing: border-box;
+	font-family: Open Sans;
 
-	&event__link {
+	&__link {
 		text-decoration: none;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 	}
 
-	&__link:hover .card-event__title {
-		color: #a51505;
-		text-decoration-color: #a51505;
+	.event-card__title:hover {
+		color: @red_dark;
+		text-decoration-color: @red_dark;
 	}
 
 	&__picture {
@@ -23,7 +24,6 @@
 		content: '';
 		display: block;
 		width: 100%;
-		padding-top: 107.16%;
 	}
 
 	&__picture-img {
@@ -40,29 +40,30 @@
 		min-height: 64px;
 		text-decoration: underline;
 		text-decoration-color: transparent;
-		font-family: Open Sans;
 		font-size: 24px;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
-		color: #1f1e1e;
+		color: @black;
 		transition: color 0.2s;
 	}
 
-	&__text {
-		margin: 15px 0;
+	&__description {
+		margin: 15px 15px 12px 0px;
+		color: @black;
 		font-size: 16px;
+		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-		color: #1f1e1e;
 	}
 
 	&__time {
 		margin-top: auto;
 		display: block;
+		color: @black;
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 300;
-		color: #1f1e1e;
+		line-height: normal;
 	}
 }
