@@ -1,3 +1,64 @@
 .form {
-	
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		row-gap: 30px;
+		column-gap: 60px;
+		&--mb50 {
+			margin-bottom: 50px;
+		}
+	}
+
+	&__group {
+		width: calc(50% - 30px);
+	}
+
+	&__field {
+		display: block;
+		width: 100%;
+
+		&--w50 {
+			width: calc(50% - 30px);
+		}
+
+		&--mb30 {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__check {
+		&--mb40 {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__btn {
+		max-width: 400px;
+		width: 100%;
+		font-weight: 600;
+		font-family: @font1;
+
+		&--close {
+			font-family: @font1;
+			border: none;
+			background-color: transparent;
+			outline: none;
+			color: @black;
+			font-weight: 600;
+			font-size: 16px;
+			line-height: 20px;
+			text-align: center;
+			text-decoration: none;
+			overflow: hidden;
+			cursor: pointer;
+			text-decoration-line: underline;
+		}
+	}
 }

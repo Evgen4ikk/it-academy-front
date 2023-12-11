@@ -8,7 +8,8 @@
 	padding: 90px 50px 50px;
 	overflow-y: auto;
 	z-index: 110;
-	display: none;
+	background-color: @gray;
+	// display: none;
 
 	@supports (backdrop-filter: blur(25px)) {
 		background-color: @black_40;
@@ -16,10 +17,13 @@
 	}
 
 	&__container {
-		position: relative;
+		display: flex;
+		flex-direction: column;
 		box-sizing: border-box;
 		max-width: 1210px;
+		width: 100%;
 		margin: auto;
+		padding: 70px 40px 40px;
 		background-color: @gray;
 		background-image: url(../../assets/images/noise.png);
 		background-repeat: repeat;
@@ -28,15 +32,14 @@
 	}
 
 	&__title {
-		position: absolute;
-		top: -65px;
-		left: 84px;
+		margin: -110px 45px 70px;
 		box-sizing: border-box;
 		padding: 10px 84px;
 		max-width: 595px;
 		background-color: @black;
 		text-transform: uppercase;
 		font-family: @font2;
+		font-weight: 400;
 		font-size: 22px;
 		line-height: 30px;
 		letter-spacing: 0.44px;
@@ -45,13 +48,15 @@
 
 	&__sticky-close {
 		position: sticky;
+		align-self: flex-end;
 		top: 0;
+		width: 0;
 	}
 
 	&__sticky-btn {
 		position: absolute;
-		right: -30px;
-		top: -30px;
+		right: -70px;
+		top: -100px;
 		box-sizing: border-box;
 		display: flex;
 		justify-content: center;
@@ -63,10 +68,18 @@
 		border-radius: 50%;
 		background-color: @black;
 		color: @white;
+		cursor: pointer;
 		transition: background-color 0.2s;
 
 		&:hover {
-
+			@media (hover: hover) {
+				background-color: @red_dark;
+			}
 		}
+	}
+
+	&__form {
+		margin: auto;
+		max-width: 870px;
 	}
 }
